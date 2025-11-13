@@ -1,0 +1,2 @@
+# yahyayasinyakisir.github.io
+Blog
