@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yasin Yakışır | Web Geliştirici</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #181818, #0f0f0f 60%);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.profile img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profile h2 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  margin-bottom: 15px;
+}
+
+.profile p {
+  max-width: 600px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.contact {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact a {
+  color: #00bcd4;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact a:hover {
+  background: rgba(0, 188, 212, 0.25);
+  transform: scale(1.05);
+  color:#fff;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #00bcd4;
+  margin: 0 0 15px;
+  border-left: 4px solid #00bcd4;
+  padding-left: 10px;
+}
+
+.expertise-row {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.expertise-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 15px;
+  flex: 1;
+}
+
+.grid-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.grid-list div {
+  background: none;
+  padding: 6px 12px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: 0.2s;
+}
+
+.grid-list div i {
+  color: #00bcd4;
+}
+
+.grid-list div:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(3px);
+}
+
+.grid-list-2cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 12px;
+}
+
+.interest-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-left: 4px solid #00bcd4;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.interest-item h5 {
+  margin: 0 0 8px 0;
+  color: #00bcd4;
+  font-size: 1.1rem;
+}
+
+.interest-item p {
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Hover efekti interest-item için */
+.interest-item:hover {
+  background: rgba(255, 255, 255, 0.12);
+  transform: translateX(3px);
+}
+
+#interests-title {
+  margin-top: 80px;
+}
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+@media (max-width: 768px) {
+  .expertise-row {
+    flex-direction: column;
+  }
+  .grid-list-2cols {
+    grid-template-columns: 1fr;
+    gap: 3px 0;
+  }
+  .card {
+    padding: 25px;
+  }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+  <div class="card">
+    <div class="profile">
+      <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profil">
+      <h1>Yahya Yasin Yakışır</h1>
+      <h2>Bilgisayar Mühendisi</h2>
+      <p>Modern web çözümleri üretiyorum. Python, Django, PHP, Laravel, Wordpress ve modern JS teknolojileriyle işletmelere özel yazılım çözümleri geliştiriyorum.</p>
+
+      <div class="contact">
+        <a href="tel:05375268833"><i class="fa fa-phone"></i> 0537 526 8833</a>
+        <a href="mailto:yahyayasinyakisir@gmail.com"><i class="fa fa-envelope"></i> Mail Gönder</a>
+        <a href="https://www.linkedin.com/in/yahya-yasin-yakisir" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/yahyayasinyakisir" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+
+    <div class="expertise-row">
+      <div class="expertise-box">
+        <div class="section-title">Uzmanlık Alanlarım</div>
+        <div class="grid-list">
+          <div><i class="fas fa-code"></i> Web Uygulamaları</div>
+          <div><i class="fas fa-cloud"></i> SaaS Geliştirme</div>
+          <div><i class="fas fa-link"></i> API Entegrasyonu</div>
+          <div><i class="fas fa-database"></i> Veritabanı ve  Optimizasyonu</div>
+          <div><i class="fas fa-paintbrush"></i> Web Tasarım</div>
+          <div><i class="fab fa-wordpress"></i> WordPress ve Eklenti Geliştirme</div>
+          <div><i class="fab fa-aws"></i> Amazon Web Service</div>
+        </div>
+      </div>
+
+      <div class="expertise-box">
+        <div class="section-title">Kullandığım Teknolojiler</div>
+        <div class="grid-list grid-list-2cols">
+          <div><i class="fab fa-python"></i> Python</div>
+          <div><i class="fab fa-js"></i> JavaScript</div>
+          <div><i class="fas fa-code"></i> TypeScript</div>
+          <div><i class="fab fa-php"></i> PHP</div>
+          <div><i class="fas fa-server"></i> Django</div>
+          <div><i class="fas fa-server"></i> Laravel</div>
+          <div><i class="fab fa-vuejs"></i> Vue.js</div>
+          <div><i class="fas fa-database"></i> PostgreSQL / MySQL</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-title" id="interests-title">Şu An Nelerle İlgileniyorum</div>
+    <div class="interest-item">
+      <h5>SaaS Projeleri</h5>
+      <p>Python, Django ve FastAPI ile SaaS tabanlı uygulama geliştirme üzerine çalışıyorum.</p>
+    </div>
+    <div class="interest-item">
+      <h5>WordPress Eklenti Geliştirme</h5>
+      <p>İşletmelere özel fonksiyonlar geliştirmek için plugin üretme üzerine yoğunlaşıyorum.</p>
+    </div>
+    <div class="interest-item">
+      <h5>SEO Optimizasyonu</h5>
+      <p>Web sitelerini arama motorlarında daha görünür yapmak için teknik SEO çalışmaları yapıyorum.</p>
+    </div>
+    <div class="interest-item">
+      <h5>Front-End Frameworkleri</h5>
+      <p>React ve Vue.js yapılarıyla modern arayüzler oluşturuyorum.</p>
+    </div>
+    <div class="interest-item">
+      <h5>Makine Öğrenmesi</h5>
+      <p>Makine öğrenmesi algoritmaları ve modeller üzerinde araştırma yaparak kendimi bu konuda geliştiriyorum.</p>
+    </div>
+    <div class="interest-item">
+      <h5>Linux Sistemler</h5>
+      <p>Linux sistemleri üzerinde araştırma yaparak bu konuda kendimi geliştritiyorum.</p>
+    </div>
+
+  </div>
+
+  <footer>© 2025 Yasin Yakışır — GitHub Pages Sürümü</footer>
+</div>
+</body>
+</html>
